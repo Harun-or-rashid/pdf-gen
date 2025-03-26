@@ -1,0 +1,34 @@
+{
+  "name": "ringku/pdf-generator",
+  "description": "Pdf Generator",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Harun Or Rashid",
+      "email": "harun35-2093@diu.edu.bd"
+    }
+  ],
+  "require": {
+    "php": "^8.2",
+    "laravel/framework": "^11.0.0",
+    "barryvdh/laravel-dompdf": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ringku\\PdfGenerator\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "ringku\\PdfGenerator\\PdfGeneratorServiceProvider"
+      ],
+      "aliases": {
+        "PdfGenerator": "ringku\\PdfGenerator\\Facades\\PdfGenerator"
+      }
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
